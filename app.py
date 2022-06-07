@@ -2,7 +2,7 @@ from flask import Flask
 from flask import request
 import wikipedia
 
-app = Flask(__name__) #flask 서버를 사용하겠다
+app = Flask(__name__) #flask 서버를 사용
 
 #경로 설정
 @app.route('/')
