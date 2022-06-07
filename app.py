@@ -11,7 +11,7 @@ def hello_world():
 
 @app.route('/one')
 def hello_one():
-    return 'hello one'
+    return 'hello one!'
 
 @app.route('/sum', methods=["POST"])
 def hello_sum():
