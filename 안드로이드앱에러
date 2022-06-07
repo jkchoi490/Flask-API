@@ -1,0 +1,30 @@
+1. Could not install Gradle distribution from 'https://services.gradle.org/distributions/gradle-7.0.2-bin.zip'.
+-> C:\Users\최정경\.gradle\wrapper\dists 위치에 압축 풀고 파일 옮겨둠
+-> . Android Studio - File - Setting -Build, Execution, Deployment - Build Tools - Gradle
+Gradle user home의 ... 눌러서 방금 설치한 gradle7.0.2 폴더를 선택하고 OK - OK
+
+
+
+2.안드로이드 에러
+2022-06-07 01:39:52.983 10530-10688/com.example.flasktestingapp E/AndroidRuntime: FATAL EXCEPTION: OkHttp Dispatcher
+    Process: com.example.flasktestingapp, PID: 10530
+    java.lang.NullPointerException: Can't toast on a thread that has not called Looper.prepare()
+        at com.android.internal.util.Preconditions.checkNotNull(Preconditions.java:157)
+
+
+-> manifest 권한 설정 해줘야됨
+
+
+3. toast 에러
+java.lang.NullPointerException: Can't toast on a thread that has not called Looper.prepare()
+
+4. manifest파일에 <application 안에
+android:usesCleartextTraffic="true" 추가해줌 -> 네트워크 못찾을때
+
+5. This view is not constrained. It only has designtime positions, so it will jump to (0,0) at runtime unless you add the constraints
+(Infer Constraints) 이라는 마법봉 누르면 됨
+
+6.  android.os.NetworkOnMainThreadException
+        at android.os.StrictMode$AndroidBlockGuardPolicy.onNetwork 에러
+
+XML 파일의 textview를 공백으로 둬서 생긴 에러였음;

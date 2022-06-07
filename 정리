@@ -1,0 +1,35 @@
+#가상환경 생성
+conda create -n flask python=3.7
+
+#가상환경 실행
+conda activate flask
+
+#flask = Python의 경량 웹 프레임워크
+#flask-restful = Restful API를 만들 수 있는 Flask의 확장판
+#mysql-connector-python = MySQL과 Python을 연결해주는 커넥터 설치 
+pip install flask flask-restrul mysql-connector-python       
+
+#사용이 편리하다
+#통합 단위 테스트 지원.
+#Django보다 빠르다.
+
+#mysql 
+pip install flask_mysqldb
+
+#안드로이드 앱에 build.gradle(:app) 에 종속성 추가
+implementation("com.squareup.okhttp3:okhttp:4.9.3")
+
+
+mkvirtualenv flaskenv --python="/usr/bin/python3.8"
+
+pip install flask
+
+pip install wikipedia
+
+SQLAlchemy는 파이썬 코드에서 DB와 연결하기 위해 사용되는 라이브러리이다.
+MySQL-Connector는 파이썬에서 DB를 사용하기 위한 공식 API이다.
+pip install sqlalchemy
+pip install mysql-connector-python
+
+
+MYSQL users 테이블 생성하기
